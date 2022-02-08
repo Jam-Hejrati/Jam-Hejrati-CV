@@ -1,0 +1,135 @@
+@import "variables";
+@import "mixins";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-color: $hero-header-bg-color;
+  display: flex;
+  align-items: center;
+
+  .theme-icon{
+      position: fixed;
+      top: 30px;
+      right: 30px;
+      @include icon-style;
+  }
+
+  .profile-img {
+    background: url(../img/Jam-Profile.jpg) center center no-repeat;
+    height: 85vh;
+    width: 32vw;
+    border-radius: 36px;
+    position: absolute;
+    inset: auto 40px auto;
+    box-shadow: 0 0 5px $hero-header-bg-color;
+  }
+
+  .content {
+    color: #fff;
+    width: 43vw;
+    position: absolute;
+    right: 13%;
+
+    .title {
+      font-size: 4.2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: -0.1rem;
+      line-height: 5.5rem;
+      margin-bottom: 20px;
+      padding-left: 47px;
+
+      .orange-title {
+        color: $skew-bg-color;
+      }
+    }
+
+    .title::before {
+      content: "";
+      width: 24px;
+      height: 4px;
+      display: block;
+      border-radius: 40px;
+      background-color: $skew-bg-color;
+      position: absolute;
+      top: 22px;
+      left: 5px;
+    }
+
+    .pragraph {
+      font-size: 1.5rem;
+      line-height: 3.5rem;
+      padding-right: 40px;
+    }
+  }
+
+  .about-me-btn{
+    width: 250px;
+    height: 47px;
+    font-size: 1.5rem;
+    color: $white;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 30px;
+    padding-left: 25px;
+    border: 1px solid $skew-bg-color;
+    border-radius: 50px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    transition:all 0.25s ease-in-out;
+    position: relative;
+  }
+
+  .arrow-icon{
+    position: absolute;
+    right: 0;
+    font-size: 1.7rem;
+    border-radius: 50%;
+    padding: 15px;
+    margin-left: 20px;
+    background-color: $skew-bg-color;
+  }
+
+  .about-me-btn:hover{
+    cursor: pointer;
+    
+  }
+}
+
+body::before {
+  content: "";
+  display: block;
+  width: 30vw;
+  height: 100vh;
+  background-color: $skew-bg-color;
+  transform: skew(14deg);
+  position: fixed;
+  left: -11%;
+}
+
+@media (max-width: 1213px) {
+  .content {
+    .title {
+      padding-left: 0 !important;
+      font-size: 3.7rem !important;
+    }
+    .title::before {
+      display: none !important;
+    }
+  }
+}

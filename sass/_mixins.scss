@@ -1,0 +1,15 @@
+@mixin cenetr-items{
+    display: grid;
+    place-items: center;
+}
+
+@mixin icon-style{
+    width: 46px;
+    height: 46px;
+    color: $white;
+    font-size: 24px;
+    background-color: $icons-bg-color;
+    border-radius: 50%;
+    cursor: pointer;
+    @include cenetr-items();
+}
