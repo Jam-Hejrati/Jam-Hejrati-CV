@@ -88,43 +88,73 @@ body .content .pragraph {
   font-size: 1.5rem;
   line-height: 3.5rem;
   padding-right: 40px;
+  margin-bottom: 30px;
 }
 
 body .about-me-btn {
-  width: 250px;
-  height: 47px;
-  font-size: 1.5rem;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 600;
-  margin-top: 30px;
-  padding-left: 25px;
+  overflow: hidden;
+  display: inline-block;
+  line-height: 1.4;
   border: 1px solid #ffb400;
-  border-radius: 50px;
-  background: transparent;
+  border-radius: 35px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+  padding: 16px 70px 16px 35px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+body .about-me-btn .btn-text {
+  position: relative;
+  z-index: 0;
+  color: #fff;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+body .about-me-btn .btn-icon {
+  background-color: #ffb400;
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
-  position: relative;
-}
-
-body .arrow-icon {
-  position: absolute;
-  right: 0;
-  font-size: 1.7rem;
   border-radius: 50%;
-  padding: 15px;
-  margin-left: 20px;
-  background-color: #ffb400;
+  font-size: 1.9rem;
+  color: #fff;
 }
 
-body .about-me-btn:hover {
-  cursor: pointer;
+body .about-me-btn::before {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  inset: 0;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
 }
 
 body::before {
