@@ -85,7 +85,7 @@ body .content .title::before {
 }
 
 body .content .pragraph {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: 3.5rem;
   padding-right: 40px;
   margin-bottom: 30px;
@@ -95,7 +95,7 @@ body .about-me-btn {
   overflow: hidden;
   display: inline-block;
   line-height: 1.4;
-  border: 1px solid #f49000;
+  border: 1px solid #d39612;
   border-radius: 35px;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -125,7 +125,7 @@ body .about-me-btn .btn-text {
 }
 
 body .about-me-btn .btn-icon {
-  background-color: #f49000;
+  background-color: #d39612;
   width: 55px;
   height: 55px;
   position: absolute;
@@ -153,7 +153,7 @@ body .about-me-btn::before {
   inset: 0;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-  background-color: #f49000;
+  background-color: #d39612;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
@@ -168,7 +168,7 @@ body::before {
   display: block;
   width: 30vw;
   height: 100vh;
-  background-color: #f49000;
+  background-color: #d39612;
   -webkit-transform: skew(14deg);
           transform: skew(14deg);
   position: fixed;
