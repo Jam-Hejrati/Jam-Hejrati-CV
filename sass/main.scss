@@ -21,11 +21,11 @@ body {
   display: flex;
   align-items: center;
 
-  .theme-icon{
-      position: fixed;
-      top: 30px;
-      right: 30px;
-      @include icon-style;
+  .theme-icon {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    @include icon-style;
   }
 
   .profile-img {
@@ -54,7 +54,7 @@ body {
       padding-left: 47px;
 
       .orange-title {
-        color: $skew-bg-color;
+        color: $title-color;
       }
     }
 
@@ -64,7 +64,7 @@ body {
       height: 4px;
       display: block;
       border-radius: 40px;
-      background-color: $skew-bg-color;
+      background-color: $title-color;
       position: absolute;
       top: 22px;
       left: 5px;
@@ -78,17 +78,17 @@ body {
     }
   }
 
-  .about-me-btn{
+  .about-me-btn {
     overflow: hidden;
     display: inline-block;
     line-height: 1.4;
-    border: 1px solid $skew-bg-color;
+    border: 1px solid $element-bg-color;
     border-radius: 35px;
     white-space: nowrap;
     text-overflow: ellipsis;
     text-align: center;
     vertical-align: middle;
-    transition: all .25s ease-in-out;
+    transition: all 0.25s ease-in-out;
     text-transform: uppercase;
     text-decoration: none;
     position: relative;
@@ -101,16 +101,17 @@ body {
     outline: none;
     cursor: pointer;
 
-    .btn-text{
+    .btn-text {
       position: relative;
       z-index: 0;
       color: $white;
-      transition: all .3s ease-out;
+      transition: all 0.3s ease-out;
     }
 
-    .btn-icon{
-      background-color: $skew-bg-color;
-      width: 55px; height: 55px;
+    .btn-icon {
+      background-color: $element-bg-color;
+      width: 55px;
+      height: 55px;
       position: absolute;
       top: -1px;
       right: -1px;
@@ -124,13 +125,18 @@ body {
     }
   }
 
-  .about-me-btn::before{
+  .about-me-btn::before {
     z-index: -1;
-    content: '';
+    content: "";
     position: absolute;
     inset: 0;
     transform: translateX(100%);
-    transition: all .3s ease-out;
+    background-color: $element-bg-color;
+    transition: all 0.3s ease-out;
+  }
+
+  .about-me-btn:hover::before{
+    transform: translateX(0);
   }
 }
 
@@ -139,7 +145,7 @@ body::before {
   display: block;
   width: 30vw;
   height: 100vh;
-  background-color: $skew-bg-color;
+  background-color: $element-bg-color;
   transform: skew(14deg);
   position: fixed;
   left: -11%;

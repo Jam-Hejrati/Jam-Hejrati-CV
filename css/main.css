@@ -95,14 +95,14 @@ body .about-me-btn {
   overflow: hidden;
   display: inline-block;
   line-height: 1.4;
-  border: 1px solid #ffb400;
+  border: 1px solid #f49000;
   border-radius: 35px;
   white-space: nowrap;
   text-overflow: ellipsis;
   text-align: center;
   vertical-align: middle;
-  -webkit-transition: all .25s ease-in-out;
-  transition: all .25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
   text-transform: uppercase;
   text-decoration: none;
   position: relative;
@@ -120,12 +120,12 @@ body .about-me-btn .btn-text {
   position: relative;
   z-index: 0;
   color: #fff;
-  -webkit-transition: all .3s ease-out;
-  transition: all .3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 body .about-me-btn .btn-icon {
-  background-color: #ffb400;
+  background-color: #f49000;
   width: 55px;
   height: 55px;
   position: absolute;
@@ -148,13 +148,19 @@ body .about-me-btn .btn-icon {
 
 body .about-me-btn::before {
   z-index: -1;
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-  -webkit-transition: all .3s ease-out;
-  transition: all .3s ease-out;
+  background-color: #f49000;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+body .about-me-btn:hover::before {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 body::before {
@@ -162,7 +168,7 @@ body::before {
   display: block;
   width: 30vw;
   height: 100vh;
-  background-color: #ffb400;
+  background-color: #f49000;
   -webkit-transform: skew(14deg);
           transform: skew(14deg);
   position: fixed;
