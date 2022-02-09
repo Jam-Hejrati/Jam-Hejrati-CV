@@ -29,12 +29,15 @@ body {
   }
 
   .profile-img {
-    background: url(../img/Jam-Profile.jpg) center center no-repeat;
-    height: 85vh;
+    background: url(../img/Jam-Profile.jpg) no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: calc(100vh - 80px);
     width: 32vw;
     border-radius: 36px;
     position: absolute;
     inset: auto 40px auto;
+    overflow: hidden;
     box-shadow: 0 0 5px $hero-header-bg-color;
   }
 

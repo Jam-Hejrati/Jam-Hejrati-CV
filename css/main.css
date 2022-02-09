@@ -28,10 +28,10 @@ body .theme-icon {
   position: fixed;
   top: 30px;
   right: 30px;
-  width: 46px;
-  height: 46px;
+  width: 50px;
+  height: 50px;
   color: #fff;
-  font-size: 24px;
+  font-size: 2.6rem;
   background-color: #262c2a;
   border-radius: 50%;
   cursor: pointer;
@@ -41,12 +41,15 @@ body .theme-icon {
 }
 
 body .profile-img {
-  background: url(../img/Jam-Profile.jpg) center center no-repeat;
-  height: 85vh;
+  background: url(../img/Jam-Profile.jpg) no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: calc(100vh - 80px);
   width: 32vw;
   border-radius: 36px;
   position: absolute;
   inset: auto 40px auto;
+  overflow: hidden;
   -webkit-box-shadow: 0 0 5px #111111;
           box-shadow: 0 0 5px #111111;
 }
