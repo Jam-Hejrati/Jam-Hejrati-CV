@@ -9,13 +9,6 @@ body {
    background-color: $hero-header-bg-color;
    @include flex-handler(null, center);
 
-   // .theme-icon {
-   //   position: fixed;
-   //   top: 30px;
-   //   right: 30px;
-   //   @include icon-style;
-   // }
-
    .profile-img {
       background: url(../img/Jam-Profile.jpg) no-repeat;
       background-size: cover;
@@ -132,35 +125,40 @@ body {
       @include flex-handler(center, end);
       background-color: $nav-bg-color;
       flex-direction: column;
-      gap: 67px;
+      gap: 62px;
       position: relative;
       margin-left: auto;
-      padding:0 30px;
+      padding:0 25px;
       height: 100%;
 
       .theme-icon {
          position: fixed;
          top: 25px;
          right: 30px;
-         font-size: 2.3rem;
+         font-size: 2.6rem;
+        }
+        
+        .menu-icon{
+          .icon-text{
+            display: none;
+            font-size: 1.4rem;
+          }  
+          
+          &:hover{
+            .icon-text{
+              display: inline;
+              margin-right: 15px;
+            }
+          }  
         }
         
       a {
          @include icon-style;
          transition: all 0.1s ease-out;
          
-         &:hover:not(:last-child) {
+         &:hover , &:focus {
            color: $title-color;
-          }
-          
-          i{
-            margin-left: 15px;
-          }
-
-          .fa-arrow-left{
-            margin: 0;
-            transition: .25s ease-in-out;
-          }
+          } 
         }
         
       .toggle-arrow {

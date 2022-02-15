@@ -169,10 +169,10 @@ body nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 67px;
+  gap: 62px;
   position: relative;
   margin-left: auto;
-  padding: 0 30px;
+  padding: 0 25px;
   height: 100%;
 }
 
@@ -180,13 +180,23 @@ body nav .theme-icon {
   position: fixed;
   top: 25px;
   right: 30px;
-  font-size: 2.3rem;
+  font-size: 2.6rem;
+}
+
+body nav .menu-icon .icon-text {
+  display: none;
+  font-size: 1.4rem;
+}
+
+body nav .menu-icon:hover .icon-text {
+  display: inline;
+  margin-right: 15px;
 }
 
 body nav a {
   color: #fff;
   text-decoration: none;
-  font-size: 1.86rem;
+  font-size: 2.06rem;
   text-transform: uppercase;
   background-color: transparent;
   border-radius: 50%;
@@ -205,18 +215,8 @@ body nav a {
   transition: all 0.1s ease-out;
 }
 
-body nav a:hover:not(:last-child) {
+body nav a:hover, body nav a:focus {
   color: #ffb400;
-}
-
-body nav a i {
-  margin-left: 15px;
-}
-
-body nav a .fa-arrow-left {
-  margin: 0;
-  -webkit-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
 }
 
 body nav .toggle-arrow {
