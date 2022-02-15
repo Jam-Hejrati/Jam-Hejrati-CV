@@ -161,9 +161,10 @@ body nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  background-color: #262c2a;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -171,20 +172,22 @@ body nav {
   gap: 67px;
   position: relative;
   margin-left: auto;
-  width: 58px;
+  padding: 0 30px;
   height: 100%;
-  background-color: #262c2a;
 }
 
 body nav .theme-icon {
   position: fixed;
   top: 25px;
+  right: 30px;
   font-size: 2.3rem;
 }
 
-body nav button {
+body nav a {
   color: #fff;
-  font-size: 1.96rem;
+  text-decoration: none;
+  font-size: 1.86rem;
+  text-transform: uppercase;
   background-color: transparent;
   border-radius: 50%;
   cursor: pointer;
@@ -202,8 +205,18 @@ body nav button {
   transition: all 0.1s ease-out;
 }
 
-body nav button:hover:not(:last-child) {
+body nav a:hover:not(:last-child) {
   color: #ffb400;
+}
+
+body nav a i {
+  margin-left: 15px;
+}
+
+body nav a .fa-arrow-left {
+  margin: 0;
+  -webkit-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
 }
 
 body nav .toggle-arrow {

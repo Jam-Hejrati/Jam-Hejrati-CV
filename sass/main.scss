@@ -129,30 +129,40 @@ body {
    }
 
    nav {
-      @include flex-handler(center, center);
+      @include flex-handler(center, end);
+      background-color: $nav-bg-color;
       flex-direction: column;
       gap: 67px;
       position: relative;
       margin-left: auto;
-      width: 58px;
+      padding:0 30px;
       height: 100%;
-      background-color: $nav-bg-color;
 
       .theme-icon {
          position: fixed;
          top: 25px;
+         right: 30px;
          font-size: 2.3rem;
-      }
-
-      button {
+        }
+        
+      a {
          @include icon-style;
          transition: all 0.1s ease-out;
-
+         
          &:hover:not(:last-child) {
-            color: $title-color;
-         }
-      }
+           color: $title-color;
+          }
+          
+          i{
+            margin-left: 15px;
+          }
 
+          .fa-arrow-left{
+            margin: 0;
+            transition: .25s ease-in-out;
+          }
+        }
+        
       .toggle-arrow {
          position: absolute;
          top: 80px;
