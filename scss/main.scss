@@ -128,39 +128,44 @@ body {
       gap: 62px;
       position: relative;
       margin-left: auto;
-      padding:0 25px;
+      padding: 0 27px;
+      width: 70px;
       height: 100%;
+      overflow: hidden;
+      transition: all 0.3s ease-in-out;
 
       .theme-icon {
          position: fixed;
          top: 25px;
          right: 30px;
          font-size: 2.6rem;
-        }
-        
-        .menu-icon{
-          .icon-text{
-            display: none;
+      }
+
+      .menu-icon {
+         .icon-text {
+            margin-right: 29px;
             font-size: 1.4rem;
-          }  
-          
-          &:hover{
-            .icon-text{
-              display: inline;
-              margin-right: 15px;
-            }
-          }  
-        }
-        
+            transition: margin-right 0.3s ease-in-out;
+         }
+      }
+      &:hover,
+      &:focus {
+         width: 150px;
+         .icon-text {
+            margin-right: 15px;
+         }
+      }
+
       a {
          @include icon-style;
          transition: all 0.1s ease-out;
-         
-         &:hover , &:focus {
-           color: $title-color;
-          } 
-        }
-        
+
+         &:hover,
+         &:focus {
+            color: $title-color;
+         }
+      }
+
       .toggle-arrow {
          position: absolute;
          top: 80px;
@@ -193,6 +198,7 @@ body::before {
          padding-left: 0 !important;
          font-size: 3.7rem !important;
       }
+
       .title::before {
          display: none !important;
       }

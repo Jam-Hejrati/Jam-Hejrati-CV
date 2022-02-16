@@ -1,265 +1,277 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap");
 * {
-  padding: 0;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
 }
 
 html {
-  font-size: 62.5%;
-  font-family: "Poppins", sans-serif;
+   font-size: 62.5%;
+   font-family: "Poppins", sans-serif;
 }
 
 button {
-  outline: none;
+   outline: none;
 }
 
 body {
-  height: 100vh;
-  width: 100%;
-  position: relative;
-  background-color: #111111;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+   height: 100vh;
+   width: 100%;
+   position: relative;
+   background-color: #111111;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   align-items: center;
 }
 
 body .profile-img {
-  background: url(../img/Jam-Profile.jpg) no-repeat;
-  background-size: cover;
-  background-position: top;
-  height: calc(100vh - 80px);
-  width: 32vw;
-  border-radius: 36px;
-  position: absolute;
-  inset: auto 40px auto;
-  overflow: hidden;
-  -webkit-box-shadow: 0 0 5px #111111;
-          box-shadow: 0 0 5px #111111;
+   background: url(../img/Jam-Profile.jpg) no-repeat;
+   background-size: cover;
+   background-position: top;
+   height: calc(100vh - 80px);
+   width: 32vw;
+   border-radius: 36px;
+   position: absolute;
+   inset: auto 40px auto;
+   overflow: hidden;
+   -webkit-box-shadow: 0 0 5px #111111;
+   box-shadow: 0 0 5px #111111;
 }
 
 body .content {
-  color: #fff;
-  width: 43vw;
-  position: absolute;
-  right: 13%;
+   color: #fff;
+   width: 43vw;
+   position: absolute;
+   right: 13%;
 }
 
 body .content .title {
-  font-size: 4.2rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: -0.1rem;
-  line-height: 5.5rem;
-  margin-bottom: 20px;
-  padding-left: 47px;
+   font-size: 4.2rem;
+   font-weight: 700;
+   text-transform: uppercase;
+   letter-spacing: -0.1rem;
+   line-height: 5.5rem;
+   margin-bottom: 20px;
+   padding-left: 47px;
 }
 
 body .content .title .orange-title {
-  color: #ffb400;
+   color: #ffb400;
 }
 
 body .content .title::before {
-  content: "";
-  width: 24px;
-  height: 4px;
-  display: block;
-  border-radius: 40px;
-  background-color: #ffb400;
-  position: absolute;
-  top: 22px;
-  left: 5px;
+   content: "";
+   width: 24px;
+   height: 4px;
+   display: block;
+   border-radius: 40px;
+   background-color: #ffb400;
+   position: absolute;
+   top: 22px;
+   left: 5px;
 }
 
 body .content .pragraph {
-  font-size: 1.6rem;
-  line-height: 3.5rem;
-  padding-right: 40px;
-  margin-bottom: 30px;
+   font-size: 1.6rem;
+   line-height: 3.5rem;
+   padding-right: 40px;
+   margin-bottom: 30px;
 }
 
 body .about-me-btn {
-  overflow: hidden;
-  display: inline-block;
-  line-height: 1.4;
-  border: 1px solid #d39612;
-  border-radius: 35px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  text-align: center;
-  vertical-align: middle;
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
-  text-transform: uppercase;
-  text-decoration: none;
-  position: relative;
-  z-index: 1;
-  padding: 16px 70px 16px 35px;
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #fff;
-  background-color: transparent;
-  outline: none;
-  cursor: pointer;
+   overflow: hidden;
+   display: inline-block;
+   line-height: 1.4;
+   border: 1px solid #d39612;
+   border-radius: 35px;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+   text-align: center;
+   vertical-align: middle;
+   -webkit-transition: all 0.25s ease-in-out;
+   transition: all 0.25s ease-in-out;
+   text-transform: uppercase;
+   text-decoration: none;
+   position: relative;
+   z-index: 1;
+   padding: 16px 70px 16px 35px;
+   font-size: 1.5rem;
+   font-weight: 600;
+   color: #fff;
+   background-color: transparent;
+   outline: none;
+   cursor: pointer;
 }
 
 body .about-me-btn .btn-text {
-  position: relative;
-  z-index: 0;
-  color: #fff;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+   position: relative;
+   z-index: 0;
+   color: #fff;
+   -webkit-transition: all 0.3s ease-out;
+   transition: all 0.3s ease-out;
 }
 
 body .about-me-btn .btn-icon {
-  background-color: #d39612;
-  width: 55px;
-  height: 55px;
-  position: absolute;
-  top: -1px;
-  right: -1px;
-  bottom: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 50%;
-  font-size: 1.9rem;
-  color: #fff;
+   background-color: #d39612;
+   width: 55px;
+   height: 55px;
+   position: absolute;
+   top: -1px;
+   right: -1px;
+   bottom: 0;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   align-items: center;
+   border-radius: 50%;
+   font-size: 1.9rem;
+   color: #fff;
 }
 
 body .about-me-btn::before {
-  z-index: -1;
-  content: "";
-  position: absolute;
-  inset: 0;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-  background-color: #d39612;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+   z-index: -1;
+   content: "";
+   position: absolute;
+   inset: 0;
+   -webkit-transform: translateX(100%);
+   transform: translateX(100%);
+   background-color: #d39612;
+   -webkit-transition: all 0.3s ease-out;
+   transition: all 0.3s ease-out;
 }
 
 body .about-me-btn:hover::before {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+   -webkit-transform: translateX(0);
+   transform: translateX(0);
 }
 
 body nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
-  background-color: #262c2a;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 62px;
-  position: relative;
-  margin-left: auto;
-  padding: 0 25px;
-  height: 100%;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+   -webkit-box-align: end;
+   -ms-flex-align: end;
+   align-items: end;
+   background-color: #262c2a;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+   -ms-flex-direction: column;
+   flex-direction: column;
+   gap: 62px;
+   position: relative;
+   margin-left: auto;
+   padding: 0 27px;
+   width: 70px;
+   height: 100%;
+   overflow: hidden;
+   -webkit-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
 }
 
 body nav .theme-icon {
-  position: fixed;
-  top: 25px;
-  right: 30px;
-  font-size: 2.6rem;
+   position: fixed;
+   top: 25px;
+   right: 30px;
+   font-size: 2.6rem;
 }
 
 body nav .menu-icon .icon-text {
-  display: none;
-  font-size: 1.4rem;
+   margin-right: 29px;
+   font-size: 1.4rem;
+   -webkit-transition: margin-right 0.3s ease-in-out;
+   transition: margin-right 0.3s ease-in-out;
 }
 
-body nav .menu-icon:hover .icon-text {
-  display: inline;
-  margin-right: 15px;
+body nav:hover,
+body nav:focus {
+   width: 150px;
+}
+
+body nav:hover .icon-text,
+body nav:focus .icon-text {
+   margin-right: 15px;
 }
 
 body nav a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 2.06rem;
-  text-transform: uppercase;
-  background-color: transparent;
-  border-radius: 50%;
-  cursor: pointer;
-  border: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: all 0.1s ease-out;
-  transition: all 0.1s ease-out;
+   color: #fff;
+   text-decoration: none;
+   font-size: 2.06rem;
+   text-transform: uppercase;
+   background-color: transparent;
+   border-radius: 50%;
+   cursor: pointer;
+   border: none;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   align-items: center;
+   -webkit-transition: all 0.1s ease-out;
+   transition: all 0.1s ease-out;
 }
 
-body nav a:hover, body nav a:focus {
-  color: #ffb400;
+body nav a:hover,
+body nav a:focus {
+   color: #ffb400;
 }
 
 body nav .toggle-arrow {
-  position: absolute;
-  top: 80px;
-  left: 0;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  font-size: 1.4rem;
-  background-color: #d39612;
-  width: 20px;
-  height: 20px;
-  border-radius: 6px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+   position: absolute;
+   top: 80px;
+   left: 0;
+   -webkit-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+   font-size: 1.4rem;
+   background-color: #d39612;
+   width: 20px;
+   height: 20px;
+   border-radius: 6px;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   align-items: center;
 }
 
 body::before {
-  content: "";
-  display: block;
-  width: 30vw;
-  height: 100vh;
-  background-color: #d39612;
-  -webkit-transform: skew(14deg);
-          transform: skew(14deg);
-  position: fixed;
-  left: -11%;
+   content: "";
+   display: block;
+   width: 30vw;
+   height: 100vh;
+   background-color: #d39612;
+   -webkit-transform: skew(14deg);
+   transform: skew(14deg);
+   position: fixed;
+   left: -11%;
 }
 
 @media (max-width: 1213px) {
-  .content .title {
-    padding-left: 0 !important;
-    font-size: 3.7rem !important;
-  }
-  .content .title::before {
-    display: none !important;
-  }
+   .content .title {
+      padding-left: 0 !important;
+      font-size: 3.7rem !important;
+   }
+   .content .title::before {
+      display: none !important;
+   }
 }
 /*# sourceMappingURL=main.css.map */
