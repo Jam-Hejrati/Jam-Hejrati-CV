@@ -131,6 +131,7 @@ body {
       padding: 0 27px;
       width: 70px;
       height: 100%;
+      z-index: 3;
       overflow: hidden;
       transition: all 0.3s ease-in-out;
 
@@ -148,8 +149,7 @@ body {
             transition: margin-right 0.3s ease-in-out;
          }
       }
-      &:hover,
-      &:focus {
+      &:hover{
          width: 150px;
          .icon-text {
             margin-right: 15px;
@@ -164,19 +164,6 @@ body {
          &:focus {
             color: $title-color;
          }
-      }
-
-      .toggle-arrow {
-         position: absolute;
-         top: 80px;
-         left: 0;
-         transform: translate(-50%, -50%);
-         font-size: 1.4rem;
-         background-color: $element-bg-color;
-         width: 20px;
-         height: 20px;
-         border-radius: 6px;
-         @include flex-handler(center, center);
       }
    }
 }
@@ -196,7 +183,7 @@ body::before {
    .content {
       .title {
          padding-left: 0 !important;
-         font-size: 3.7rem !important;
+         font-size: 3.5rem !important;
       }
 
       .title::before {
