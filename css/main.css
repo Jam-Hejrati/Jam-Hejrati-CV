@@ -170,8 +170,8 @@ body nav {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 62px;
-  position: relative;
-  margin-left: auto;
+  position: absolute;
+  right: 0;
   padding: 0 27px;
   width: 70px;
   height: 100%;
@@ -221,8 +221,8 @@ body nav a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: all 0.1s ease-out;
-  transition: all 0.1s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 body nav a:hover, body nav a:focus {
@@ -239,6 +239,10 @@ body::before {
           transform: skew(14deg);
   position: fixed;
   left: -11%;
+}
+
+.container.light-mode {
+  background-color: #e0e0e0;
 }
 
 @media (max-width: 1213px) {
