@@ -180,7 +180,53 @@ body::before {
 }
 
 .container.light-mode{
+   .about-me-btn{
+      background-color: #fff;
+      border: 1px solid #FF7043;
+   }
+   .about-me-btn::before{
+      background-color: #FF7043;
+      
+   }
+   .about-me-btn:hover{
+      .btn-text{
+         color: #fff;
+      }
+      .btn-icon{
+         background-color: #FF7043;
+         border: 1px solid #fff;
+         color: #fff;
+      }
+   }
+   .about-me-btn:hover::before{
+      background-color: #FF7043;
+   }
+   .btn-text{
+      color: #455A64;
+   }
+   .btn-icon{
+      background-color: #fff;
+      border : 1px solid #FF7043;
+      color: #455A64;
+   }
    background-color: $hero-header-light-mode-bg-color;
+   .title{
+      color: #455A64;
+      .orange-title{
+         color: #FF7043;
+
+      }
+      &::before{
+         background-color: #FF7043;
+      }
+   }
+   .pragraph{
+      color: #455A64;
+   }
+}
+
+.container.light-mode::before{
+   background-color: #FF7043;
 }
 
 @media (max-width: 1213px) {
