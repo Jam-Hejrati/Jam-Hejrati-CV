@@ -1,6 +1,5 @@
-
 const lightModeHandler = () => {
-    wholeBody.classList.add('light-mode');
+    wholeBody.classList.toggle('light-mode');
 }
 
 themeBtn.addEventListener("click" , lightModeHandler);
