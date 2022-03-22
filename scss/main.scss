@@ -8,6 +8,7 @@ body {
    position: relative;
    background-color: $hero-header-bg-color;
    @include flex-handler(null, center);
+   transition: all 0.3s ease-in-out;
 
    .profile-img {
       background: url(../img/Jam-Profile.jpg) no-repeat;
@@ -149,7 +150,7 @@ body {
             transition: margin-right 0.3s ease-in-out;
          }
       }
-      &:hover{
+      &:hover {
          width: 150px;
          .icon-text {
             margin-right: 15px;
@@ -177,56 +178,72 @@ body::before {
    transform: skew(14deg);
    position: fixed;
    left: -11%;
+   transition: all 0.3s ease-in-out;
 }
 
-.container.light-mode{
-   .about-me-btn{
-      background-color: #fff;
-      border: 1px solid #FF7043;
-   }
-   .about-me-btn::before{
-      background-color: #FF7043;
-      
-   }
-   .about-me-btn:hover{
-      .btn-text{
-         color: #fff;
-      }
-      .btn-icon{
-         background-color: #FF7043;
-         border: 1px solid #fff;
-         color: #fff;
-      }
-   }
-   .about-me-btn:hover::before{
-      background-color: #FF7043;
-   }
-   .btn-text{
-      color: #455A64;
-   }
-   .btn-icon{
-      background-color: #fff;
-      border : 1px solid #FF7043;
-      color: #455A64;
-   }
+.container.light-mode {
    background-color: $hero-header-light-mode-bg-color;
-   .title{
-      color: #455A64;
-      .orange-title{
-         color: #FF7043;
+   .about-me-btn {
+      background-color: $white;
+      border: 1px solid $orange-light-mode;
 
-      }
-      &::before{
-         background-color: #FF7043;
+      &:hover {
+         .btn-text {
+            color: $white;
+         }
+         .btn-icon {
+            background-color: $orange-light-mode;
+            border: 1px solid $white;
+            color: $white;
+         }
+
+         &::before {
+            background-color: $orange-light-mode;
+         }
+
+         &::before {
+            background-color: $orange-light-mode;
+         }
       }
    }
-   .pragraph{
-      color: #455A64;
+   .btn-text {
+      color: $text-color-light-mode;
    }
-}
+   .btn-icon {
+      background-color: $white;
+      border: 1px solid $orange-light-mode;
+      color: $text-color-light-mode;
+   }
+   .title {
+      color: $text-color-light-mode;
+      .orange-title {
+         color: $orange-light-mode;
+      }
+      &::before {
+         background-color: $orange-light-mode;
+      }
+   }
+   .pragraph {
+      color: $text-color-light-mode;
+      font-weight: 500;
+   }
 
-.container.light-mode::before{
-   background-color: #FF7043;
+   &::before {
+      background-color: $orange-light-mode;
+   }
+
+   nav {
+      background-color: $orange-light-mode;
+      a {
+         font-weight: 500;
+         color: $white;
+
+         &:hover,
+         &:focus {
+            color: $text-color-light-mode;
+         }
+      }
+   }
 }
 
 @media (max-width: 1213px) {
