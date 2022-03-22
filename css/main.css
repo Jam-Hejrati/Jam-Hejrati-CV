@@ -31,7 +31,7 @@ body {
 }
 
 body .profile-img {
-  background: url(../img/Jam-Profile.jpg) no-repeat;
+  background: url(../img/Profile-Photo.jpg) no-repeat;
   background-size: cover;
   background-position: top;
   height: calc(100vh - 80px);
