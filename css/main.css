@@ -34,6 +34,8 @@ body .profile-img {
   background: url(../img/Profile-Photo.jpg) no-repeat;
   background-size: cover;
   background-position: top;
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
   height: calc(100vh - 80px);
   width: 32vw;
   border-radius: 36px;
@@ -258,16 +260,6 @@ body::before {
   color: #fff;
 }
 
-.container.light-mode .about-me-btn:hover .btn-icon {
-  background-color: #ff7043;
-  border: 1px solid #fff;
-  color: #fff;
-}
-
-.container.light-mode .about-me-btn:hover::before {
-  background-color: #ff7043;
-}
-
 .container.light-mode .about-me-btn:hover::before {
   background-color: #ff7043;
 }
@@ -277,9 +269,8 @@ body::before {
 }
 
 .container.light-mode .btn-icon {
-  background-color: #fff;
-  border: 1px solid #ff7043;
-  color: #455a64;
+  background-color: #ff7043;
+  color: #fff;
 }
 
 .container.light-mode .title {

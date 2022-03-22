@@ -14,6 +14,7 @@ body {
       background: url(../img/Profile-Photo.jpg) no-repeat;
       background-size: cover;
       background-position: top;
+      filter: brightness(90%);
       height: calc(100vh - 80px);
       width: 32vw;
       border-radius: 36px;
@@ -191,15 +192,6 @@ body::before {
          .btn-text {
             color: $white;
          }
-         .btn-icon {
-            background-color: $orange-light-mode;
-            border: 1px solid $white;
-            color: $white;
-         }
-
-         &::before {
-            background-color: $orange-light-mode;
-         }
 
          &::before {
             background-color: $orange-light-mode;
@@ -210,9 +202,8 @@ body::before {
       color: $text-color-light-mode;
    }
    .btn-icon {
-      background-color: $white;
-      border: 1px solid $orange-light-mode;
-      color: $text-color-light-mode;
+      background-color: $orange-light-mode;
+      color: $white;
    }
    .title {
       color: $text-color-light-mode;
