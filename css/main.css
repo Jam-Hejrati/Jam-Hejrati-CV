@@ -367,9 +367,10 @@ body::before {
   .container .menu {
     height: 67px;
     width: 100%;
-    position: -webkit-sticky;
-    position: sticky;
+    position: fixed;
     bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
     overflow: auto;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;

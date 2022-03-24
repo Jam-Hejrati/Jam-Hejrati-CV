@@ -1,7 +1,6 @@
 @import "variables";
 @import "mixins";
 @import "reset";
-// @import "responsive";
 
 body {
    height: 100vh;
@@ -301,8 +300,10 @@ body::before {
       .menu {
          height: 67px;
          width: 100%;
-         position: sticky;
+         position: fixed;
          bottom: 0 !important;
+         left: 0 !important;
+         right: 0 !important;
          overflow: auto;
          flex-direction: row;
          overflow: hidden;
