@@ -1,6 +1,7 @@
 @import "variables";
 @import "mixins";
 @import "reset";
+@import "responsive";
 
 body {
    height: 100vh;
@@ -182,6 +183,7 @@ body::before {
    transition: all 0.3s ease-in-out;
 }
 
+/*light mode styles*/
 .container.light-mode {
    background-color: $hero-header-light-mode-bg-color;
    .about-me-btn {
@@ -237,15 +239,3 @@ body::before {
    }
 }
 
-@media (max-width: 1213px) {
-   .content {
-      .title {
-         padding-left: 0 !important;
-         font-size: 3.5rem !important;
-      }
-
-      .title::before {
-         display: none !important;
-      }
-   }
-}

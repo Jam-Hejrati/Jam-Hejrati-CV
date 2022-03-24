@@ -15,6 +15,103 @@ button {
   outline: none;
 }
 
+@media (max-width: 1213px) {
+  .content .title {
+    padding-left: 0 !important;
+    font-size: 3.5rem !important;
+  }
+  .content .title::before {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    width: 100%;
+    height: auto;
+    position: static;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .profile-img {
+    width: 270px;
+    height: 270px;
+    border: 4px solid #262c2a;
+    border-radius: 50%;
+    position: static;
+    margin: 30px 0;
+  }
+  .container .content {
+    width: 80%;
+    position: static;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .container .content .pragraph {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  .container .menu {
+    height: 67px;
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0 !important;
+    overflow: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 14%;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .menu .menu-icon {
+    font-size: 1.8rem;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #37474f;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .menu .menu-icon .icon-text {
+    display: none;
+  }
+  .container .menu:hover {
+    width: 100%;
+  }
+  .container::before {
+    display: none !important;
+  }
+  .container.light-mode .profile-img {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .container.light-mode .menu .menu-icon {
+    background-color: #ff9270 !important;
+  }
+}
+
 body {
   height: 100vh;
   width: 100%;
@@ -247,6 +344,7 @@ body::before {
   transition: all 0.3s ease-in-out;
 }
 
+/*light mode styles*/
 .container.light-mode {
   background-color: #ffffff;
 }
@@ -305,15 +403,5 @@ body::before {
 
 .container.light-mode nav a:hover, .container.light-mode nav a:focus {
   color: #455a64;
-}
-
-@media (max-width: 1213px) {
-  .content .title {
-    padding-left: 0 !important;
-    font-size: 3.5rem !important;
-  }
-  .content .title::before {
-    display: none !important;
-  }
 }
 /*# sourceMappingURL=main.css.map */
