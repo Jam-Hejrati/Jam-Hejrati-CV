@@ -47,9 +47,8 @@
          bottom: 0 !important;
          overflow: auto;
          flex-direction: row;
-         gap: 14%;
          overflow: hidden;
-         @include flex-handler(center, center);
+         @include flex-handler(space-evenly, center);
 
          .menu-icon {
             font-size: 1.8rem;
