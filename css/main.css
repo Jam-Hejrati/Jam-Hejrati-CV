@@ -308,6 +308,30 @@ body::before {
   color: #455a64;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #37474f;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background-color: #455a64;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: #37474f;
+}
+
+::-webkit-scrollbar-corner {
+  width: 15px;
+  background-color: red;
+  padding: 5px;
+  margin: 5px;
+}
+
 @media (max-width: 1213px) {
   .content .title {
     padding-left: 0 !important;
