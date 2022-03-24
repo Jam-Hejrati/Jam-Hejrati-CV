@@ -256,13 +256,6 @@ body::before {
    background-color: $icon-bg-color;
 }
 
-::-webkit-scrollbar-corner{
-   width: 15px;
-   background-color: red;
-   padding: 5px;
-   margin: 5px;
-}
-
 @media (max-width: 1213px) {
    .content {
       .title {

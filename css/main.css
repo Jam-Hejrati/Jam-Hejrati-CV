@@ -325,13 +325,6 @@ body::before {
   background-color: #37474f;
 }
 
-::-webkit-scrollbar-corner {
-  width: 15px;
-  background-color: red;
-  padding: 5px;
-  margin: 5px;
-}
-
 @media (max-width: 1213px) {
   .content .title {
     padding-left: 0 !important;
