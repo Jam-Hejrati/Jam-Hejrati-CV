@@ -344,6 +344,7 @@ body::before {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-bottom: 50px;
   }
   .container .profile-img {
     width: 270px;
