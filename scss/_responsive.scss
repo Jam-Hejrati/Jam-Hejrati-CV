@@ -85,3 +85,25 @@
       }
    }
 }
+
+
+@media(max-width: 630px){
+    .container{
+        .content{
+            .title{
+                font-size: 3rem !important;
+            }
+            .pragraph{
+                font-size: 1.4rem;
+            }
+        }
+        .menu{
+            gap: 7%;
+            .menu-icon{
+                width: 40px;
+                height: 40px;
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
