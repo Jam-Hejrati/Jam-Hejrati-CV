@@ -1,0 +1,160 @@
+@import "variables";
+@import "mixins";
+@import "reset";
+
+body {
+   height: 100vh;
+   width: 100%;
+   position: relative;
+   background-color: $hero-header-bg-color;
+   @include flex-handler(null, center);
+   transition: all 0.3s ease-in-out;
+
+   nav {
+      @include flex-handler(center, end);
+      background-color: $nav-bg-color;
+      flex-direction: column;
+      gap: 62px;
+      position: absolute;
+      right: 0;
+      padding: 0 27px;
+      width: 70px;
+      height: 100%;
+      z-index: 3;
+      overflow: hidden;
+      transition: all 0.3s ease-in-out;
+
+      .theme-icon {
+         position: fixed;
+         top: 25px;
+         right: 30px;
+         font-size: 2.6rem;
+      }
+
+      .menu-icon {
+         .icon-text {
+            margin-right: 29px;
+            font-size: 1.4rem;
+            transition: margin-right 0.3s ease-in-out;
+         }
+      }
+      &:hover {
+         width: 150px;
+         .icon-text {
+            margin-right: 15px;
+         }
+      }
+
+      a {
+         @include icon-style;
+         transition: all 0.2s ease-out;
+
+         &:hover,
+         &:focus {
+            color: $title-color;
+         }
+      }
+   }
+}
+
+/*light mode styles*/
+.container.light-mode {
+   background-color: $hero-header-light-mode-bg-color;
+   nav {
+      background-color: $orange-light-mode;
+      a {
+         font-weight: 500;
+         color: $white;
+
+         &:hover,
+         &:focus {
+            color: $text-color-light-mode;
+         }
+      }
+   }
+}
+
+::-webkit-scrollbar {
+   width: 8px;
+}
+
+::-webkit-scrollbar-track {
+   background-color: $icon-bg-color;
+}
+
+::-webkit-scrollbar-thumb {
+   border-radius: 50px;
+   background-color: $text-color-light-mode;
+}
+
+::-webkit-scrollbar-track-piece {
+   background-color: $icon-bg-color;
+}
+
+@media (max-width: 1000px) {
+   .container {
+      width: 100%;
+      height: auto;
+      position: static;
+      flex-direction: column;
+      margin-bottom: 50px;
+
+      .menu {
+         height: 67px;
+         width: 100%;
+         position: fixed;
+         bottom: 0 !important;
+         left: 0 !important;
+         right: 0 !important;
+         overflow: auto;
+         flex-direction: row;
+         overflow: hidden;
+         @include flex-handler(space-evenly, center);
+
+         .menu-icon {
+            font-size: 1.8rem;
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: $icon-bg-color;
+            @include flex-handler(center, center);
+            .icon-text {
+               display: none;
+            }
+         }
+
+         &:hover {
+            width: 100%;
+         }
+      }
+   }
+
+   .container.light-mode {
+      .menu {
+         .menu-icon {
+            background-color: $orange-light-mode-100 !important;
+         }
+      }
+      .theme-icon {
+         color: $text-color-light-mode;
+         &:hover,
+         &:focus {
+            color: $orange-light-mode;
+         }
+      }
+   }
+}
+
+@media (max-width: 630px) {
+   .container {
+      .menu {
+         gap: 7%;
+         .menu-icon {
+            width: 40px;
+            height: 40px;
+            font-size: 1.4rem;
+         }
+      }
+   }
+}
